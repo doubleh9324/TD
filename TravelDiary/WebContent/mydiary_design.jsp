@@ -29,8 +29,8 @@ function logout(){
 }
 
 $(function(){
-	var h = window.alert($(".dcover").css('height'));
-	if(h != $(".dcover").css('height'));
+	//var h = window.alert($(".dcover").css('height'));
+	//if(h != $(".dcover").css('height'));
 	{}
 	});
 </script>
@@ -135,7 +135,6 @@ $(function(){
 	</div>
 	<!-- end : diary list -->
 
-	<img src="upload/slider1.jpg" class="tcover" alt ="" />
 <center>
 <button class="button btn-warning" onclick="window.location='diaryList.jsp'">
 <span>Other's Diary</span></button> 

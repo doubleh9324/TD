@@ -136,11 +136,8 @@ function logout(){
 			<div class="picture">
 			<a href="diarydays.jsp?dvol=<%= diaryList.getDiary_volum() %>&mnum=<%=mnum %>" 
 			title="Title">
-			<%
-				String path = "upload/" + diaryList.getCover();
-				int img=1;
-			%>
-			<img src=<%= path%> id="<%=i%>"alt=""/>
+		<% String path = "upload/"+diaryList.getCover(); %>
+			<img src=<%= path%> alt="" class="dcover"/>
 			<div class="image-overlay-link"></div></a>
 				<div class="item-description alt">
 					<h5><a href="diarydays.jsp?dvol=<%= diaryList.getDiary_volum() %>">
@@ -154,20 +151,10 @@ function logout(){
 			</div>
 		</div>
 
-<% i++; } %>
+<% } %>
 	</div>
 	<!-- end : diary list -->
 
-	<center>
-<% 	
-		for (int i=1; i<=viewData.getPageTotalCount(); i++) { 
-%>
-		<a href="mydiary.jsp?page=<%= i %>"><%= i %></a>
-		 
-<%
-		} 
-%>
-	</center>
 <br>
 <%  } /* 메시지 있는 경우 처리 끝 */ %>
 
