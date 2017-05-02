@@ -1189,11 +1189,11 @@ color: white;
 /* Progress Bar
 =================================================================== */
 .progress-bar h5 {
-	margin-bottom:6px;
+	margin-bottom:6px; !important
 }
 
 .progress-bar li {
-	margin-bottom:12px;
+	margin-bottom:12px; 
 	list-style: none;
 }
 

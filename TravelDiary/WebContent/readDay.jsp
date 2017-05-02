@@ -126,18 +126,20 @@ function deleteDay(dnum){
 	<!-- end : 1st section - day view -->
 	
 	<!-- start : 2st section - reply -->
+	
+	<div class="row-fluid">
 	<jsp:include page="replylist.jsp" flush="false" >
 		<jsp:param name = "userNum" value = "<%= userNum %>" />
 		<jsp:param name = "mnum" value = "<%= mnum %>" />
 	</jsp:include>
 	
-	<form action="writereply.jsp" id="writeReply" name="writeReply" method="post">
+	<form action="writereply.jsp" id="writeReply" name="writeReply" method="post" autocomplete="off">
 	<input type="hidden" name="dnum" value="<%= dnum %>" >
 	<input type="hidden" name="userNum" value="<%= userNum %>" >
 	<input type="text" name="reply" >
 	<input class="btn-success" style="background-color: transparent; padding:0px;"type="submit" value="등록">
 	</form>	
-	
+	</div>
 	<!-- end : 2st section - reply -->
 	
 	<!-- start : 3st section - button -->
@@ -156,6 +158,8 @@ function deleteDay(dnum){
 	<span>일기장 보기</span></a>
 	<a onclick="javascript:window.location='writeDay.jsp?userNum=<%=userNum%>'" class="button btn-success">
 	<span>일기쓰기</span></a>
+	\<button class="button btn-success" onclick="javascript:window.location='writeDay.jsp?userNum=<%=userNum%>'">
+	<span>스크랩</span></button>
 	<button class="button btn-success" onclick="javascript:window.scrap(<%= userNum %>, <%= dnum %>)">
 	<span>스크랩</span></button>
 </center>

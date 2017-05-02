@@ -3,7 +3,6 @@
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="wpjsp.service.ReadDaySer"%>
 <%@page import="wpjsp.model.Days"%>
-<%@page import="wpjsp.service.ReadJournalService"%>
 <%@page import="wpjsp.model.JournalListView"%>
 <%@page import="wpjsp.model.Bulletin"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"

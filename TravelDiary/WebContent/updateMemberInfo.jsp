@@ -3,11 +3,8 @@
     pageEncoding="EUC-KR"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="java.text.SimpleDateFormat"%>
-<%@ page import="wpjsp.service.JoinService"%>
 <%@ page import="wpjsp.model.Member"%>
 <%@ page import="java.sql.*"%>
-<%@ page import="wpjsp.service.UpdateMemberInfoService" %>
-<%@ page import="wpjsp.service.GetMemberInfoService" %>
 
 
 

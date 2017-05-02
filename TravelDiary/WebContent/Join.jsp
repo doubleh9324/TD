@@ -2,7 +2,6 @@
 <%@ page contentType="text/html;charset=utf-8"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="java.text.SimpleDateFormat"%>
-<%@ page import="wpjsp.service.JoinService"%>
 <%@ page import="wpjsp.model.Member"%>
 <%@ page import="java.sql.*"%>
 

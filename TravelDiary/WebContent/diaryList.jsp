@@ -4,7 +4,6 @@
 <%@page import="wpjsp.model.Diary"%>
 <%@page import="wpjsp.model.DiaryListView"%>
 <%@page import="wpjsp.service.GetDiaryListSer"%>
-<%@page import="wpjsp.service.GetMemberInfoService"%>
 <%@page import="wpjsp.model.Member"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
@@ -128,7 +127,8 @@
 			<div class="picture">
 			<a href="diarydays.jsp?dvol=<%= diaryList.getDiary_volum() %>&mnum=<%= diaryList.getMember_num()%>" 
 			title="Title">
-			<img src="img/diary/redbox.png" alt=""/>
+			<% String path = "upload/"+diaryList.getCover(); %>
+			<img src=<%=path %> alt="" class="dcover"/>
 			<div class="image-overlay-link"></div></a>
 				<div class="item-description alt">
 					<h5><a href="diarydays.jsp?dvol=<%= diaryList.getDiary_volum() %>&mnum=<%= diaryList.getMember_num()%>">

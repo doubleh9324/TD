@@ -1,11 +1,7 @@
-<%@page import="wpjsp.service.GetMemberJnListService"%>
-<%@page import="wpjsp.service.GetScrapListService"%>
 <%@page import="wpjsp.model.Bulletin"%>
 <%@page import="wpjsp.model.JournalListView"%>
 <%@page import="wpjsp.model.Member"%>
 
-<%@page import="wpjsp.service.ConvertNumToIdService"%>
-<%@page import="wpjsp.service.GetMemberInfoService"%>
 
 
 

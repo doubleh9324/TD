@@ -4,7 +4,6 @@
 <%@page import="wpjsp.model.Diary"%>
 <%@page import="wpjsp.model.DiaryListView"%>
 <%@page import="wpjsp.service.GetDiaryListSer"%>
-<%@page import="wpjsp.service.GetMemberInfoService"%>
 <%@page import="wpjsp.model.Member"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>

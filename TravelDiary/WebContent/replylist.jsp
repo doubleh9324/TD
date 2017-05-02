@@ -7,7 +7,6 @@
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="wpjsp.model.Reply"%>
 <%@page import="wpjsp.model.ReplyListView"%>
-<%@page import="wpjsp.service.GetReplyListService"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -86,7 +85,7 @@ background-color: transparent;}
 	
 	int re=0;
 	if(viewData.isEmpty()){ %>
-댓글이 없습니다. <br>
+<table><tr><td>댓글이 없습니다.</td></tr></table> <br>
 <% } else { %>
 <div>
 <table>

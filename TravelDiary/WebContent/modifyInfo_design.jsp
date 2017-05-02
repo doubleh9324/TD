@@ -4,9 +4,6 @@
     
 <%@ page import = "java.net.URLDecoder"%>
 <%@ page import = "java.sql.SQLException" %>
-<%@ page import = "wpjsp.service.GetJournalListService" %>
-<%@ page import = "wpjsp.service.GetMemberInfoService" %>
-<%@ page import = "wpjsp.service.ConvertNumToIdService" %>
 <%@ page import = "wpjsp.model.JournalListView" %>
 <%@ page import = "wpjsp.model.Bulletin"%>
 <%@ page import = "wpjsp.model.Member"%>

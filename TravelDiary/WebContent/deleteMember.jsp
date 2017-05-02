@@ -1,7 +1,5 @@
 <%@page import="wpjsp.service.DeleteMemberSer"%>
 <%@page import="wpjsp.service.GetMemberInfoSer"%>
-<%@page import="wpjsp.service.DeleteMemberService"%>
-<%@page import="wpjsp.service.GetMemberInfoService"%>
 <%@page import="wpjsp.model.Member"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>

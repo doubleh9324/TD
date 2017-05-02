@@ -1,5 +1,4 @@
 <%@page import="wpjsp.service.ScrapSer"%>
-<%@page import="wpjsp.service.ScrapService"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -14,7 +13,7 @@ function scrapClose(){
 }
 
 function goscrapList(){
-	opener.location.href='scraplist.jsp';
+	opener.location.href='Main_design.jsp#mypage';
 	window.close();
 }
 

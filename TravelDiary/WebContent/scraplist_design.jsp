@@ -27,14 +27,6 @@
 
 <script type="text/javascript">
 
-function logout(){
-	var result = window.confirm('°¡´Ï?');
-	
-	if(result){
-		window.location='Logout.jsp';
-	}else{}
-}
-
 function selectAll(obj){
 	var isAllch = document.getElementById('allcheck').checked;
 	var checkbox = document.getElementsByName('chscrap');

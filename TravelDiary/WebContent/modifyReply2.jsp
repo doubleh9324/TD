@@ -1,5 +1,4 @@
 <%@page import="wpjsp.model.Reply"%>
-<%@page import="wpjsp.service.UpdateReplyService"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%

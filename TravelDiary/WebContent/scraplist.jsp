@@ -3,13 +3,10 @@
 <%@page import="wpjsp.service.GetScrapListSer"%>
 <%@page import="wpjsp.model.DaysView"%>
 <%@page import="wpjsp.service.GetMemberInfoSer"%>
-<%@page import="wpjsp.service.GetScrapListService"%>
 
 <%@ page import = "java.net.URLDecoder"%>
 <%@ page import = "java.sql.SQLException" %>
 <%@ page import = "wpjsp.service.GetDayListSer" %>
-<%@ page import = "wpjsp.service.GetMemberInfoService" %>
-<%@ page import = "wpjsp.service.ConvertNumToIdService" %>
 <%@ page import = "wpjsp.model.DaysView" %>
 <%@ page import = "wpjsp.model.Bulletin"%>
 <%@ page import = "wpjsp.model.Member"%>

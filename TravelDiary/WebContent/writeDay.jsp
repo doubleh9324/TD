@@ -142,7 +142,7 @@ textarea {
 
 		</div>
 <div class="container write-wrap" style="border:none;">
-<form action = "writeDay2.jsp" method = "post" onsubmit="return checkF();">
+<form action = "writeDay2.jsp" method = "post" onsubmit="return checkF();" autocomplete="off">
 <table class="write" style="width:100%;">
 
 	<tr>

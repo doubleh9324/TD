@@ -4,7 +4,6 @@
 <%@ page import = "java.net.URLDecoder"%>
 <%@ page import = "java.sql.SQLException" %>
 
-<%@ page import="wpjsp.service.LoginService" %>
 <%@ page import="wpjsp.model.Member" %>
 <%@ page import="java.sql.*" %>
 
@@ -25,7 +24,7 @@
 
 	boolean rs;
 
-	LoginService loginservice = LoginService.getInstance();
+	LoginSer loginservice = LoginSer.getInstance();
 	rs = loginservice.Login(member);
 	
 	if(!rs)//나중에 앞뒤바꾸기

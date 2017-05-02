@@ -6,8 +6,6 @@
 <%@ page contentType="text/html; charset=euc-kr" %>
 <%@ page import="wpjsp.model.Bulletin" %>
 <%@ page import="wpjsp.model.Member" %>
-<%@ page import="wpjsp.service.WriteJournalService" %>
-<%@ page import="wpjsp.service.GetMemberInfoService" %>
 
 <%
 	request.setCharacterEncoding("euc-kr");

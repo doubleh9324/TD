@@ -1,3 +1,4 @@
+<%@page import="java.util.Date"%>
 <%@page import="wpjsp.service.ConvertNumToIdSer"%>
 <%@page import="wpjsp.service.GetReplyListSer"%>
 <%@page import="wpjsp.model.Diary"%>
@@ -25,12 +26,16 @@ function deleteDiary(dvol, userNum){
 	}else{}
 }
 </script>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link href="css/style.css" rel="stylesheet"> 
 </head>
 <body>
 <!-- start : page - day list -->
 
 	<!-- start : Container -->
-	<div id="mydays" class="container color yellow ppagebox">
+	<div id="about" class="container color yellow ppagebox">
 	
 		<!-- start : navigation -->
 		<%@include file="menu_top.html" %>	
@@ -46,7 +51,8 @@ function deleteDiary(dvol, userNum){
 				</div>				
 			</div>
 			<!-- end : Page Title -->
-
+			
+			
 <%
 	String userId = (String)session.getAttribute("USERID");
 	Member memberInfo = null;
@@ -86,8 +92,46 @@ function deleteDiary(dvol, userNum){
 	
 	GetReplyListSer getreplylistSer = GetReplyListSer.getInstance();
 	int[][] dnum_rec = getreplylistSer.getReplyCount();
+	
+	Date sday = diaryinfo.getStart_day();
+	Date eday = diaryinfo.getEnd_day();
+	
+	double oneday = 24 * 60 * 60 * 1000;
+	double daycount = Math.round(Math.abs((sday.getTime() - eday.getTime()) / (oneday)))+1;
+	
+	double prog = viewData.getDayTotalCount()/daycount*100;
+	
+	//프로그래스 바 안뜸. 글자는 왜 세로정렬?
+	System.out.println(viewData.getDayTotalCount()+ " "+daycount+" "+prog);
 
 %>
+
+			<!-- start: Row -->
+			<div class="row-fluid">		
+				<!-- 확인하고 지우기 -->
+				<div class="span12">
+					
+					<!-- start: Skills -->
+			       	<h3>Achievement</h3>
+			       	<ul class="progress-bar">
+						<li>
+			            	<h5> 여행완성 ( <%=prog %>% ) </h5>
+			          	</li>
+			        	<li>
+			            	<div class="meter"><span style="width: 80%"></span></div>
+			          	</li>
+			      	</ul>
+			      	<!-- end: Skills -->
+			      	
+		      	</div>
+    	  	</div>
+      		<!-- end : Row -->
+      		
+			<!-- start: Row -->
+			<div class="row-fluid">		
+				<!-- 확인하고 지우기 -->
+				<div class="span12">
+			      	
 난<%=userId %><br>
 <%= connum.getMemberId(diaryinfo.getMember_num()) %>의 일기장  <%= diaryinfo.getDiary_title() %><br>
 <%		
@@ -170,12 +214,14 @@ function deleteDiary(dvol, userNum){
 </center>
 		</center>
 		</div>
-		
+			</div></div>
 		</div>
 		<!-- end : Wrapper -->
 		
 	</div>
 	<!-- end : Container -->
+	
+	
 		
 </body>
 </html>

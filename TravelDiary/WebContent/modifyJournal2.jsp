@@ -1,5 +1,4 @@
 <%@page import="wpjsp.service.UpdateJournalService"%>
-<%@page import="wpjsp.service.GetMemberInfoService"%>
 <%@page import="wpjsp.model.Member"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>

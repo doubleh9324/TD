@@ -1,6 +1,5 @@
 <%@page import="java.util.Calendar"%>
 <%@page import="wpjsp.service.GetMemberInfoSer"%>
-<%@page import="wpjsp.service.GetMemberInfoService"%>
 <%@page import="wpjsp.model.Member"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
@@ -167,7 +166,7 @@ width : 80%;}
 <!-- start : Page - new diary -->
 
 	<div class="container write-wrap">
-	<form action="writeDiary2.jsp" name="writeDiary" method="post" enctype="multipart/form-data">
+	<form action="writeDiary2.jsp" name="writeDiary" method="post" enctype="multipart/form-data" autocomplete="off">
 	
 	<table class="write" style="width: 100%;">
 		<tr>
